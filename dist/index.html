@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230226181212">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230228182812"/> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230228182812">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +17,68 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
+				<div class="header__menu menu">
+					<a href="#" class="menu__link">Про мене</a>
+					<a href="#" class="menu__link">Асортимент</a>
+					<a href="#" class="menu__link">Рецепти</a>
+					<a href="#" class="menu__link">Блог</a>
+				</div>
 			</div>
 		</header>
+
+
 		<main class="page">
-			<section>
-			</section>
+			<div class="page__wrapper">
+				<section class="preview page__screen">
+					<div class="screen__content">
+						<h1 class="screen__title" data-swiper-parallax-opacity="0" data-swiper-parallax="-200%" data-swiper-parallax-duration="1000">Дозвольте собі <br> солодке життя</h1>
+					</div>
+					<div class="screen__body">
+						<div class="screen__image" data-swiper-parallax="50%" data-swiper-parallax-scale="1.1">
+							<picture><source srcset="img/background_slider/cupcake-1.webp" type="image/webp"><img src="img/background_slider/cupcake-1.jpg" alt=""></picture>
+						</div>
+					</div>
+				</section>
+				<section class="page__screen products">
+					<div class="screen__content">
+						<h1 class="screen__title" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="1000">Асортимент</h1>
+						<div class="screen__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="900">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, libero? Modi quasi laborum voluptatum eos ea voluptate quia alias, expedita doloribus commodi! Quo eos fugit, accusantium maxime vel animi iste.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, exercitationem sapiente sed laboriosam recusandae illum, quam saepe molestiae magni, facilis quaerat error! Ex earum nihil repellat, nemo deleniti blanditiis aliquid.</p>
+						</div>
+					</div>
+				</section>
+				<section class="page__screen">
+					<div class="screen__body">
+						<div class="screen__image" data-swiper-parallax="50%">
+							<picture><source srcset="img/background_slider/musecake.webp" type="image/webp"><img src="img/background_slider/musecake.jpg" alt=""></picture>
+						</div>
+					</div>
+				</section>
+				<section class="page__screen recipes">
+					<div class="screen__content">
+						<h1 class="screen__title" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="1000">Рецепти</h1>
+						<div class="screen__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="900">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, libero? Modi quasi laborum voluptatum eos ea voluptate quia alias, expedita doloribus commodi! Quo eos fugit, accusantium maxime vel animi iste.</p>
+						</div>
+					</div>
+					<div class="screen__body">
+						<div class="screen__image" data-swiper-parallax="50%">
+							<picture><source srcset="img/background_slider/macarons-yellow-big.webp" type="image/webp"><img src="img/background_slider/macarons-yellow-big.jpg" alt=""></picture>
+						</div>
+					</div>
+				</section>
+				<section class="page-bakery bakery page__screen blog">
+					<div class="bakery__content">
+						<h2 class="bakery__title">Блог</h2>
+						<div class="bakery__text">
+							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, libero? Modi quasi laborum voluptatum eos ea voluptate quia alias, expedita doloribus commodi! Quo eos fugit, accusantium maxime vel animi iste.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, exercitationem sapiente sed laboriosam recusandae illum, quam saepe molestiae magni, facilis quaerat error! Ex earum nihil repellat, nemo deleniti blanditiis aliquid.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="page__scroll"></div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -39,7 +97,8 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20230226181212"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230228182812"></script>
+	<script src="js/app.min.js?_v=20230228182812"></script>
 </body>
 
 </html>
