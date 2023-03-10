@@ -2,12 +2,11 @@
 <html lang="ru">
 
 <head>
-	<title>HomePage</title>
+	<title>NK HomeBakery</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20230228182812"/> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230228182812">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230310151623">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +16,21 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
+				<a href="#" class="header__logo"><img src="img/logo-sm.svg" alt="Logo"></a>
 				<div class="header__menu menu">
-					<a href="#" class="menu__link">Про мене</a>
-					<a href="#" class="menu__link">Асортимент</a>
-					<a href="#" class="menu__link">Рецепти</a>
-					<a href="#" class="menu__link">Блог</a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#welcome" class="menu__link">Головна</a></li>
+							<li class="menu__item"><a href="#about" class="menu__link">Про мене</a></li>
+							<li class="menu__item"><a href="#products" class="menu__link">Асортимент</a></li>
+							<li class="menu__item"><a href="#recipes" class="menu__link">Рецепти</a></li>
+							<li class="menu__item"><a href="#blog" class="menu__link">Блог</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<a href="" class="header__button btn">Замовлення</a>
+					<button type="button" class="icon-menu"><span></span></button>
 				</div>
 			</div>
 		</header>
@@ -29,56 +38,70 @@
 
 		<main class="page">
 			<div class="page__wrapper">
-				<section class="preview page__screen">
-					<div class="screen__content">
-						<h1 class="screen__title" data-swiper-parallax-opacity="0" data-swiper-parallax="-200%" data-swiper-parallax-duration="1000">Дозвольте собі <br> солодке життя</h1>
+				<section class="page__section welcome" id="welcome">
+					<div class="section__container welcome__container">
+						<h1 class="container__title welcome__title"> <span>NK</span>Home Bakery</h1>
+						<div class="container__text welcome__text">Десерти на замовлення</div>
+						<a href="#" type="button" class="welcome__btn btn">Детальніше</a>
 					</div>
-					<div class="screen__body">
-						<div class="screen__image" data-swiper-parallax="50%" data-swiper-parallax-scale="1.1">
-							<picture><source srcset="img/background_slider/cupcake-1.webp" type="image/webp"><img src="img/background_slider/cupcake-1.jpg" alt=""></picture>
+				</section>
+				<section class="page__section about" id="about">
+					<div class="section__container about__container">
+						<div class="container__title about__title">
+							<div class="block">
+								<div class="block__item _icon-logo-cake"></div>
+							</div>
+							<div class="title__label">Кондитер</div>
+							<h2 class="title__value">Наталя Корнега</h2>
+						</div>
+						<div class="container__text about__text">
+							<p>Ласково прошу у частинку мого життя.</p>
+							<p>Мене звуть Наталя, я кондитер зі Львова.</p>
+							<p>Готувати тортики та десерти - це справа, яка мене надихає. І у кожний свій виріб я вкладаю багато любові та тепла.</p>
+						</div>
+						<div class="social about__social">
+							<a href="#" class="social__link _icon-instagram"></a>
+							<a href="#" class="social__link _icon-viber"></a>
 						</div>
 					</div>
 				</section>
-				<section class="page__screen products">
-					<div class="screen__content">
-						<h1 class="screen__title" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="1000">Асортимент</h1>
-						<div class="screen__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="900">
+				<section class="page__section parallax">
+					<div class="section__container parallax__container">
+						<h1 class="container__title parallax__title">Дозвольте собі <br> солодке життя</h1>
+					</div>
+					<!-- <div class="section__image">
+                     <picture><source srcset="img/background_slider/cupcake-1.webp" type="image/webp"><img src="img/background_slider/cupcake-1.jpg" alt=""></picture>
+                  </div> -->
+				</section>
+				<section class="page__section products" id="products">
+					<div class="section__container products__container">
+						<h1 class="container__title products__title">Асортимент</h1>
+						<div class="container__text products__text">
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, libero? Modi quasi laborum voluptatum eos ea voluptate quia alias, expedita doloribus commodi! Quo eos fugit, accusantium maxime vel animi iste.</p>
 							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, exercitationem sapiente sed laboriosam recusandae illum, quam saepe molestiae magni, facilis quaerat error! Ex earum nihil repellat, nemo deleniti blanditiis aliquid.</p>
 						</div>
 					</div>
 				</section>
-				<section class="page__screen">
-					<div class="screen__body">
-						<div class="screen__image" data-swiper-parallax="50%">
-							<picture><source srcset="img/background_slider/musecake.webp" type="image/webp"><img src="img/background_slider/musecake.jpg" alt=""></picture>
-						</div>
-					</div>
-				</section>
-				<section class="page__screen recipes">
-					<div class="screen__content">
-						<h1 class="screen__title" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="1000">Рецепти</h1>
-						<div class="screen__text" data-swiper-parallax-opacity="0" data-swiper-parallax="-100%" data-swiper-parallax-duration="900">
+				<section class="page__section recipes" id="recipes">
+					<div class="section__container recipes__container">
+						<h1 class="container__title recipes__title">Рецепти</h1>
+						<div class="container__text recipes__text">
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, libero? Modi quasi laborum voluptatum eos ea voluptate quia alias, expedita doloribus commodi! Quo eos fugit, accusantium maxime vel animi iste.</p>
 						</div>
 					</div>
-					<div class="screen__body">
-						<div class="screen__image" data-swiper-parallax="50%">
-							<picture><source srcset="img/background_slider/macarons-yellow-big.webp" type="image/webp"><img src="img/background_slider/macarons-yellow-big.jpg" alt=""></picture>
-						</div>
+					<div class="section__image">
+						<picture><source srcset="img/background_slider/cupcake-bg.webp" type="image/webp"><img src="img/background_slider/cupcake-bg.jpg" alt=""></picture>
 					</div>
 				</section>
-				<section class="page-bakery bakery page__screen blog">
-					<div class="bakery__content">
-						<h2 class="bakery__title">Блог</h2>
-						<div class="bakery__text">
+				<section class="page__section blog" id="blog">
+					<div class="section__container blog__container">
+						<h1 class="container__title blog__title">Блог</h1>
+						<div class="container__text blog__text">
 							<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, libero? Modi quasi laborum voluptatum eos ea voluptate quia alias, expedita doloribus commodi! Quo eos fugit, accusantium maxime vel animi iste.</p>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, exercitationem sapiente sed laboriosam recusandae illum, quam saepe molestiae magni, facilis quaerat error! Ex earum nihil repellat, nemo deleniti blanditiis aliquid.</p>
 						</div>
 					</div>
 				</section>
 			</div>
-			<div class="page__scroll"></div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -97,8 +120,7 @@
 </div>
  -->
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20230228182812"></script>
-	<script src="js/app.min.js?_v=20230228182812"></script>
+	<script src="js/app.min.js?_v=20230310151623"></script>
 </body>
 
 </html>
